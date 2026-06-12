@@ -76,7 +76,7 @@ void main() {
     if(handDepth >= 1.0){
         //Motion Blur
         #ifdef MOTION_BLUR
-                    const float kernalSize3 = 5.0;
+                    const float kernalSize3 = 2.0;
         const float coeff3 = 1.0 / (kernalSize3 * kernalSize3);
         for(float x = -1.0; x <= 1.0; x += coeff3){
         blur3 += coeff3 * texture(DiffuseSampler0, uv - vec2(velocity.x * x, velocity.y * x) * MotionBlurStrength * 0.25) * 0.5;
@@ -124,4 +124,8 @@ void main() {
     vec2 vhsNoise = texture(VhsNoise, vec2(uv.x - GameTime * 3000.0, uv.y + GameTime * 5000.0)).gb * 0.1;
     fragColor.gb += vec2(vhsNoise.x * 0.9, vhsNoise.y * 0.9) * 0.2;
     fragColor.rgb = yuv2rgb(fragColor.rgb);
+
+    //VHS SCAN-LINES
+    float scan = sin(gl_FragCoord.y * 3.0) * 0.08;
+    fragColor.rgb *= step(0.5, fract(gl_FragCoord.y / 3.0));
 }

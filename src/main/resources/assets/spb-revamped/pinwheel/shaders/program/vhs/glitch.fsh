@@ -19,7 +19,7 @@ vec2 BarrelDistortionCoordinates(vec2 uv){
 	float len = distance(pos, vec2(0.0f));
 	len = pow(len/2.0f, 1.0f);
 
-	pos = pos + pos * len * len;
+	pos = pos + pos * len * len * -0.1;
 
 	pos = 0.5f * (pos + 1.0f);
 

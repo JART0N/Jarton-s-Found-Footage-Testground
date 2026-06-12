@@ -43,6 +43,7 @@ public class FlashlightRenderer {
                             VeilRenderSystem.renderer().getDeferredRenderer().getLightRenderer().addLight(areaLight
                                     .setBrightness(1f)
                                     .setDistance(25f)
+                                    .setColor(0.969F, 0.969F, 0.816F)
                                     .setSize(0, 0)
                                     .setPosition(playerPos.getX(), playerPos.getY(), playerPos.getZ())
                                     .setOrientation(orientation)
