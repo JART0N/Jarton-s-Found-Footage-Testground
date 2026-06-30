@@ -1,0 +1,42 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"1": "spb-revamped:block/caution1",
+		"particle": "spb-revamped:block/caution1"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 0.1, 16],
+			"faces": {
+				"north": {"uv": [0, 4, 16, 4.125], "texture": "#1"},
+				"east": {"uv": [0, 6, 2, 6.125], "texture": "#1"},
+				"south": {"uv": [0, 5, 16, 5.125], "texture": "#1"},
+				"west": {"uv": [2, 6, 4, 6.125], "texture": "#1"},
+				"up": {"uv": [16, 15.5, 0, 0], "texture": "#1"},
+				"down": {"uv": [16, 2, 0, 4], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 90],
+			"translation": [0, 7.75, 8.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -97, 0],
+			"translation": [0, 10, 3]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-66, -100, -70],
+			"translation": [2, 9.25, 2.75]
+		},
+		"ground": {
+			"translation": [0, 5, 0]
+		},
+		"gui": {
+			"rotation": [-90, 0, 0]
+		}
+	}
+}

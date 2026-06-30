@@ -26,7 +26,6 @@ public class Level324Backroomslevel extends BackroomsLevel implements BackroomsL
     public Level324Backroomslevel() {
         super("level324", Level324ChunkGenerator.CODEC, new Vec3d(52,65,21), BackroomsLevels.LEVEL324_WORLD_KEY);
 
-        this.registerEvent("flicker", LightLevelFlicker::new);
         this.registerEvent("ambience", ScreechSoundEvent::new);
 
         this.registerTransition((world, playerComponent, from) -> {

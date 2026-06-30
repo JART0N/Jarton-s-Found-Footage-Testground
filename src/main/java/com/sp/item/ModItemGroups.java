@@ -100,6 +100,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DOUBLE_SIDED_SHELF);
                         entries.add(ModBlocks.ONE_SIDED_SHELF);
                         entries.add(ModBlocks.PAVEMENT);
+                        entries.add(ModBlocks.CAUTION_TAPE_1);
+                        entries.add(ModBlocks.CAUTION_TAPE_2);
 
 
                     }).build());

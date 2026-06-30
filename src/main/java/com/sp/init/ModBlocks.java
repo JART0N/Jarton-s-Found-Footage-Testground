@@ -259,6 +259,12 @@ public class ModBlocks {
     public static final Block PAVEMENT = registerBlock("pavement",
             new Block(FabricBlockSettings.copyOf(ModBlocks.CONCRETE_BLOCK_11).hardness(-1f).noBlockBreakParticles().sounds(SprintBlockSoundGroup.CONCRETE)));
 
+    public static final Block CAUTION_TAPE_1 = registerBlock("caution_tape_1",
+            new CautionTape1(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).hardness(-1f).noBlockBreakParticles().nonOpaque().collidable(false).sounds(SprintBlockSoundGroup.SILENT)));
+
+    public static final Block CAUTION_TAPE_2 = registerBlock("caution_tape_2",
+            new CautionTape2(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).hardness(-1f).noBlockBreakParticles().nonOpaque().collidable(false).sounds(SprintBlockSoundGroup.SILENT)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

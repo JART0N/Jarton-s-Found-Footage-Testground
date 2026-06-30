@@ -79,6 +79,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Vector;
 
+import static com.sp.init.ModBlocks.CAUTION_TAPE_1;
+import static com.sp.init.ModBlocks.CAUTION_TAPE_2;
+
 
 public class SPBRevampedClient implements ClientModInitializer {
     private GrassRenderer grassRenderer;
@@ -146,6 +149,9 @@ public class SPBRevampedClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RUG_2, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_METAL_CASING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WINDOW, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(CAUTION_TAPE_1, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(CAUTION_TAPE_2, RenderLayer.getCutout());
+
 
         BlockEntityRendererFactories.register(ModBlockEntities.FLUORESCENT_LIGHT_BLOCK_ENTITY, FluorescentLightBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.THIN_FLUORESCENT_LIGHT_BLOCK_ENTITY, ThinFluorescentLightBlockEntityRenderer::new);
