@@ -127,5 +127,5 @@ void main() {
 
     //VHS SCAN-LINES
     float scan = sin(gl_FragCoord.y * 3.0) * 0.08;
-    fragColor.rgb *= step(0.5, fract(gl_FragCoord.y / 3.0));
+    fragColor.rgb *= 0.92 + scan;
 }
