@@ -126,6 +126,7 @@ void main() {
     fragColor.rgb = yuv2rgb(fragColor.rgb);
 
     //VHS SCAN-LINES
-    float scan = sin(gl_FragCoord.y * 3.0) * 0.08;
-    fragColor.rgb *= 0.92 + scan;
+    float scan2 = sin(BarrelDistortion.y * 3240.0) * 0.08;
+    float scan1 = sin(gl_FragCoord.y * 3.0) * 0.08;
+    fragColor.rgb *= 0.92 + scan1;
 }

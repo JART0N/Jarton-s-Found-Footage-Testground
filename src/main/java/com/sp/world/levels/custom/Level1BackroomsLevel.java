@@ -101,7 +101,7 @@ public class Level1BackroomsLevel extends BackroomsLevel implements BackroomsLev
                     if (tick == 30) {
                         if (!playerComponent.player.getWorld().isClient()) {
                             if(!playerComponent.isTeleporting()) {
-                                playerComponent.player.setYaw(playerComponent.player.getYaw() - 90);
+                                playerComponent.player.setYaw(playerComponent.player.getYaw() - 0);
                                 SPBRevamped.sendLevelTransitionLightsOutPacket((ServerPlayerEntity) playerComponent.player, 80);
                             }
                         }
@@ -109,7 +109,7 @@ public class Level1BackroomsLevel extends BackroomsLevel implements BackroomsLev
                 }, // Tick
                 new CrossDimensionTeleport(
                         playerComponent,
-                        new Vec3d(53, 65, 21),
+                        new Vec3d(53, 66, 21),
                         this,
                         BackroomsLevels.LEVEL324_BACKROOMS_LEVEL),
                 (teleport, tick) -> {}

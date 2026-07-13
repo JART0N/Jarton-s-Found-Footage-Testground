@@ -5,7 +5,7 @@ import com.sp.SPBRevampedClient;
 import com.sp.cca_stuff.PlayerComponent;
 import com.sp.init.BackroomsLevels;
 import com.sp.init.ModBlocks;
-import com.sp.world.events.generic.lights.LightLevelFlicker;
+//import com.sp.world.events.generic.lights.LightLevelFlicker;
 import com.sp.world.events.level324.ScreechSoundEvent;
 import com.sp.world.generation.chunk_generator.Level324ChunkGenerator;
 import com.sp.world.levels.BackroomsLevel;
@@ -24,7 +24,7 @@ public class Level324Backroomslevel extends BackroomsLevel implements BackroomsL
     private Level0BackroomsLevel.LightState lightState = BackroomsLevelWithLights.LightState.ON;
 
     public Level324Backroomslevel() {
-        super("level324", Level324ChunkGenerator.CODEC, new Vec3d(52,65,21), BackroomsLevels.LEVEL324_WORLD_KEY);
+        super("level324", Level324ChunkGenerator.CODEC, new Vec3d(52,66,21), BackroomsLevels.LEVEL324_WORLD_KEY);
 
         this.registerEvent("ambience", ScreechSoundEvent::new);
 

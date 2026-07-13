@@ -79,7 +79,7 @@ void main() {
 
 
     #ifdef LEVEL324
-    isInRoad = (mod(player.x + offset.x, 1000) < 8) || ((player.z + offset.z > 0 && player.z + offset.z < 27) && (player.x + offset.x > 8 && player.x + offset.x < 56));
+    isInRoad = (mod(player.x + offset.x, 1000) < 8) || ((player.z + offset.z > -0.2 && player.z + offset.z < 26.4) && (player.x + offset.x > 27.5 && player.x + offset.x < 59));
     #endif
 
 

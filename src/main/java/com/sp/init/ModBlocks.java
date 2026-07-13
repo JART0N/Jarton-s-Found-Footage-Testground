@@ -87,6 +87,9 @@ public class ModBlocks {
     public static final Block BRICKS = registerBlock("bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).noBlockBreakParticles()));
 
+    public static final Block DOUBLE_PIPE = registerBlock("double_pipe",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).noBlockBreakParticles().nonOpaque().sounds(SprintBlockSoundGroup.SILENT)));
+
 
 
     //////Level 2 and 3 Stuff//////
@@ -115,10 +118,10 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).solid().noBlockBreakParticles()));
 
     public static final Block CONCRETE_BLOCK_9 = registerBlock("concrete9",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).solid().noBlockBreakParticles()));
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).solid().noBlockBreakParticles().sounds(SprintBlockSoundGroup.CONCRETE)));
 
     public static final Block CONCRETE_BLOCK_9_SLAB = registerBlock("concrete9slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).solid().noBlockBreakParticles()));
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).solid().noBlockBreakParticles().sounds(SprintBlockSoundGroup.CONCRETE)));
 
     public static final Block CONCRETE_BLOCK_10 = registerBlock("concrete10",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).solid().noBlockBreakParticles()));
@@ -131,7 +134,7 @@ public class ModBlocks {
 
 
     public static final Block THIN_PIPE = registerBlock("thin_pipe",
-            new ThinPipe(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).noBlockBreakParticles().nonOpaque().collidable(false).sounds(SprintBlockSoundGroup.SILENT)));
+            new ThinPipe(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).noBlockBreakParticles().nonOpaque().collidable(true).sounds(SprintBlockSoundGroup.SILENT)));
 
     public static final Block THIN_PIPE_CORNER = registerBlock("thin_pipe_corner",
             new ThinPipeCorner(FabricBlockSettings.copyOf(Blocks.STONE).hardness(-1f).noBlockBreakParticles().nonOpaque().collidable(false).sounds(SprintBlockSoundGroup.SILENT)));
